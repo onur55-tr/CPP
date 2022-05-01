@@ -17,7 +17,7 @@ public:
 		void	setRawBits ( const int raw );
 		~Fixed(); //deconstructor
 
-public:
+private:
 	int 				value;
 	static const int	fraction = 8;
 };

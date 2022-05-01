@@ -12,7 +12,7 @@
 
 NAME = phonebook
 
-SRC = main.cpp
+SRC = main.cpp phoneBook.cpp Contact.cpp
 
 OBJS = $(SRC:.cpp=.o)
 

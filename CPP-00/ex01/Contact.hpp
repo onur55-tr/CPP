@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <iomanip>
-#include "phonebook.hpp"
+#include "phoneBook.hpp"
 
 using std::cout;
 using std::string;
@@ -19,18 +19,6 @@ private:
 
 public:
 	static void show_preview ( PhoneBook list[8] );
-
 };
-
-
-void Contact::show_preview ( PhoneBook list[8] ) {
-	cout << "|-------------------------------------------|" << endl;
-	cout << "|    INDEX| First Name| Last Name| Nick Name|" << endl;
-	for ( int i = 0; i < 8; i++ ) {
-		cout << "|-------------------------------------------|" << endl;
-		list[i].print_preview (i);
-	}
-}
-
 
 #endif //CONTACT_HPP

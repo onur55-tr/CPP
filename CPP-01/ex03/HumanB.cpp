@@ -1,8 +1,7 @@
 // Created by Onur Dursun on 20.04.2022.
 #include "HumanB.hpp"
 
-HumanB::HumanB ( string _name ): name(_name), weaponType(nullptr)
-{
+HumanB::HumanB ( string _name ): name(_name), weaponType(nullptr) {
 }
 
 void HumanB::setWeapon ( Weapon &_weapon ) {
