@@ -1,5 +1,5 @@
 // Created by Onur Dursun on 20.04.2022.
-#include "Weapon.hpp"
+#include "../Include/Weapon.hpp"
 
 Weapon::Weapon ( string _name ) {
 	weapon_ = _name;

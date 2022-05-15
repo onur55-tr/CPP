@@ -1,4 +1,4 @@
-#include "Zombie.hpp"
+#include "../Include/Zombie.hpp"
 
 void Zombie::set_name ( string _name )
 {
@@ -12,7 +12,7 @@ void	Zombie::announce ()
 
 Zombie::Zombie(string name_): name_(name_)
 {
-
+	cout << endl;
 }
 
 Zombie::~Zombie () {

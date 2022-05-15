@@ -1,7 +1,7 @@
 // Created by Onur Dursun on 5/8/22.
 
-#include "Contact.hpp"
-#include "phoneBook.hpp"
+#include "../Include/Contact.hpp"
+#include "../Include/phoneBook.hpp"
 
 //void print_preview ( int index );
 

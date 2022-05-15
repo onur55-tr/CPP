@@ -1,7 +1,7 @@
 // Created by Onur Dursun on 20.04.2022.
 
-#include "HumanA.hpp"
-#include "HumanB.hpp"
+#include "../Include/HumanA.hpp"
+#include "../Include/HumanB.hpp"
 
 int main() {
 	{

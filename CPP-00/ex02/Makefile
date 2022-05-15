@@ -10,9 +10,9 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME = phonebook
+NAME = Account
 
-SRC = $(wildcard Source/*cpp)
+SRC = Account.cpp tests.cpp
 
 OBJS = $(SRC:.cpp=.o)
 

@@ -1,6 +1,6 @@
 NAME = zombie
 
-SRCS = $(wildcard *cpp)
+SRCS = $(wildcard Source/*cpp)
 
 CXX = @g++
 

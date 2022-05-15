@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "phoneBook.hpp"
-#include "Contact.hpp"
+#include "../Include/phoneBook.hpp"
+#include "../Include/Contact.hpp"
 
 int main () {
 	string cmd;

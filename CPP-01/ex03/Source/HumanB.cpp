@@ -1,5 +1,5 @@
 // Created by Onur Dursun on 20.04.2022.
-#include "HumanB.hpp"
+#include "../Include/HumanB.hpp"
 
 HumanB::HumanB ( string _name ): name(_name), weaponType(nullptr) {
 }

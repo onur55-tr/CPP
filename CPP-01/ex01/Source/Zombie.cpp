@@ -1,5 +1,5 @@
 // Created by Onur Dursun on 19.04.2022.
-#include "Zombie.hpp"
+#include "../Include/Zombie.hpp"
 
 void Zombie::set_name(string _name)
 {

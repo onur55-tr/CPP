@@ -1,4 +1,4 @@
-#include "Zombie.hpp"
+#include "../Include/Zombie.hpp"
 
 Zombie	*newZombie( string name )
 {
