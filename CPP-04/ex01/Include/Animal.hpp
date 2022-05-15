@@ -25,5 +25,3 @@ protected:
 
 private:
 };
-
-ostream &operator << ( ostream &o, const Animal &a );

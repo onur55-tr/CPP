@@ -1,9 +1,9 @@
 #pragma once
 
-#include "../../ex01/Include/Animal.hpp"
-#include "../../ex01/Include/Brain.hpp"
+#include "AAnimal.hpp"
+#include "Brain.hpp"
 
-class Dog: virtual public Animal {
+class Dog: virtual public AAnimal {
 public:
 	Dog ( void );
 	Dog ( const Dog &d );

@@ -27,8 +27,3 @@ void	Animal::makeSound () const {
 string	Animal::getType() const {
 	return ( this->type );
 }
-
-ostream	&operator << ( ostream &o, const Animal &i ) {
-	o << "I am an animal of type: " << i.getType() << endl;
-	return ( o );
-}
