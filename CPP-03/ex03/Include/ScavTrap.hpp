@@ -2,20 +2,27 @@
 
 #include "ClapTrap.hpp"
 
-class ScavTrap:
-		public ClapTrap
+class ScavTrap : public virtual ClapTrap
 {
+protected:
+	unsigned int hitpoints;
+	unsigned int energyPoints;
+	unsigned int attackDamage;
+
 public:
-	ScavTrap ( void );
-	ScavTrap ( string name );
-	ScavTrap ( ScavTrap const &a );
-	virtual ~ScavTrap( void );
+	ScavTrap();
+	ScavTrap(const std::string& name);
+	ScavTrap(const ScavTrap& a);
+	virtual ~ScavTrap();
 
-	ScavTrap &operator = ( const ScavTrap &a );
+	ScavTrap& operator=(const ScavTrap& a);
 
-	void	guardGate( void );
-	void	attack ( const string &target );
+	unsigned int getHitpoints(void) const;
+	unsigned int getEnergyPoints(void) const;
+	unsigned int getAttackDamage(void) const;
 
+	void attack(const std::string& target);
+	void takeDamage(unsigned int amount);
+	void beRepaired(unsigned int amount);
+	void guardGate();
 };
-
-ostream	&operator << (ostream &o, const ScavTrap &s );

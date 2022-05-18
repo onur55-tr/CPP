@@ -1,27 +1,30 @@
-#pragma once
-
 #include "ScavTrap.hpp"
 #include "FragTrap.hpp"
-#include "ClapTrap.hpp"
 
-class DiamondTrap :  public virtual ScavTrap, public virtual FragTrap
+class DiamondTrap : public ScavTrap, public FragTrap
 {
 private:
-	string	_name;
+	std::string name;
 	using FragTrap::hitPoints;
 	using ScavTrap::energyPoints;
 	using FragTrap::attackDamage;
-public:
-	DiamondTrap ( void );
-	DiamondTrap ( string &name );
-	DiamondTrap (const DiamondTrap &a );
-	~DiamondTrap ( void );
 
-	DiamondTrap		&operator = ( DiamondTrap const &a );
-	const string	&getForName ( void ) const;
-	void		whoAmI ();
+public:
+	DiamondTrap();
+	DiamondTrap(const std::string& name);
+	DiamondTrap(const DiamondTrap& a);
+	virtual ~DiamondTrap();
+
+	DiamondTrap& operator=(const DiamondTrap& a);
+
+	const std::string& getName(void) const;
+	const std::string& getPairentName(void) const;
+	using FragTrap::getHitPoints;
+	using ScavTrap::getEnergyPoints;
+	using FragTrap::getAttackDamage;
 
 	using ScavTrap::attack;
+	using FragTrap::takeDamage;
+	using FragTrap::beRepaired;
+	void whoAmI();
 };
-
-ostream &operator << (ostream &o, const DiamondTrap &i );

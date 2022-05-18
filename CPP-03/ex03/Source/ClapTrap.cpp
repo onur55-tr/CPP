@@ -1,4 +1,4 @@
-#include "../Include/ClapTrap.hpp"
+#include "ClapTrap.hpp"
 
 ClapTrap::ClapTrap ( void ) : hitPoints(100), energyPoints(50), attackDamage(20){
 	cout << "Default Construcor called" << endl;
